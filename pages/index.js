@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { MyHead } from '../components';
+import { MyHead, Nav, Search } from '../components';
 
 export default function Home() {
   return (
@@ -16,6 +16,8 @@ export default function Home() {
         <MyHead>
           FIND THE REPO
         </MyHead>
+        <Nav page='user'/>
+        <Search page='user'/>
     </main>
     </div>
   )
