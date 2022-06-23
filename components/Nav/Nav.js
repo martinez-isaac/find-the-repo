@@ -34,12 +34,12 @@ const Nav = ({page}) => (
   </Container>
     <Tabs>
       <Tab isSelected={page === 'user'}>
-        <Link href={page === 'user' ? '/#' : '/'}>
+        <Link href='/'>
           <TextTabs>Usuario</TextTabs>
         </Link>
       </Tab>
-      <Tab isSelected={page === 'repo'}>
-        <Link href={page === 'repo' ? '/#' : '/repos'}>
+      <Tab isSelected={page === 'repos'}>
+        <Link href='/repos'>
           <TextTabs>Repositorio</TextTabs>
         </Link>
       </Tab>
