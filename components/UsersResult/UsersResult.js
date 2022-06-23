@@ -22,15 +22,13 @@ const UsersResult = ({user}) => {
     const data = await response.json();
     setShowInfo(true);
     setInfoUser(data);
-    console.log(infoUser);
   };
 
   const renderInfo = () => {
     if(Object.keys(infoUser).length > 0 && showInfo) {
-    console.log('render',infoUser.public_repos);
       return(
       <>
-       <Columns alignContent='center' breakpoint="tablet">
+       <Columns alignContent='center' breakpoint="mobile">
           <Columns.Column size={4}>
             <Heading subtitle>{infoUser.public_repos}</Heading>
             <p>public repos</p>
