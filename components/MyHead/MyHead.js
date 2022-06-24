@@ -14,7 +14,7 @@ const H1 = styled.h1`
 
 const MyHead = ({children}) => (
   <Container purpleBack={true}>
-      <Image height={23} width={24} src={cat} alt="Pet FIND THE REPO" placeholder="blur"/>
+      <Image height={23} width={24} src={cat} alt="Pet FIND THE REPO" />
       <H1>{children}</H1>
   </Container>
 );
